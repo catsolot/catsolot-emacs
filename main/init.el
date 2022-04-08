@@ -47,7 +47,6 @@
              (evil-mode 1)
              (setq-default indent-tabs-mode nil
                            tab-width 4)
-             (define-key evil-insert-state-map (kbd "jk") 'evil-normal-state)
              )
 
 (use-package counsel
@@ -61,12 +60,18 @@
 
 (use-package magit)
 
+(use-package elpy
+  :ensure t
+  :init
+  (elpy-enable))
+
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(package-selected-packages '(counsel use-package evil doom-themes doom-modeline)))
+ '(package-selected-packages
+   '(elpy magit counsel use-package evil doom-themes doom-modeline)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
