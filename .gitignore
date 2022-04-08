@@ -2,3 +2,4 @@ default/elpa
 default/*.*~
 default/elpy
 default/transient
+default/auto-save-list
