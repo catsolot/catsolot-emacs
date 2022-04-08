@@ -1,4 +1,4 @@
-main/elpa
-main/*.*~
-main/elpy
-main/transient
+default/elpa
+default/*.*~
+default/elpy
+default/transient
